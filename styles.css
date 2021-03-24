@@ -1,0 +1,75 @@
+
+html {
+    height: 100%;
+}
+body{
+    background: linear-gradient(135deg,#3b9fc7, #000000) no-repeat center center fixed;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.s{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    visibility: visible;
+    box-sizing: border-box;
+    font-family: inherit;
+    line-height: 1.1;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 62pt;
+    font-weight: normal;
+    color: #eee;
+    height: 200px;
+}
+
+.bar{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    background: #1e5799;
+    background: -moz-linear-gradient(left,  #1e5799 0%, #f300ff 50%, #e0ff00 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1e5799), color-stop(50%,#f300ff), color-stop(100%,#e0ff00));
+    background: -webkit-linear-gradient(left,  #1e5799 0%,#f300ff 50%,#e0ff00 100%);
+    background: -o-linear-gradient(left,  #1e5799 0%,#f300ff 50%,#e0ff00 100%);
+    background: -ms-linear-gradient(left,  #1e5799 0%,#f300ff 50%,#e0ff00 100%);
+    background: linear-gradient(to right,  #1e5799 0%,#f300ff 50%,#e0ff00 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#e0ff00',GradientType=1 );
+    height: 3px;
+}
+
+
+body .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2em 2em;
+    border-radius: 1em;
+    text-align: center;
+  }
+
+  .container span{
+    color: #23c091;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-weight: normal;
+}
+  body .container input {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: none;
+    border-radius: .2em;
+    padding: 5px 0 5px 0;
+    text-align: center;
+  }
+  
+  body .container *:focus {
+    outline: none;
+  }
+  

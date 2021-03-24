@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<title>Conversor</title>
+</head>
+<body>
+    <script src="script.js"></script>
+<div class="bar"></div>
+
+<div class="container">
+    
+        <div>
+        <h1 class="s">Conversor de <span>moedas</span></h1>
+        </div>
+        
+        <SPAN><h2>Converter de:</h2></SPAN>
+        <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="convert-from" id="de">
+            <option value="BRL">Real</option>
+            <option value="USD">Dólar</option>
+            <option value="EUR">Euro</option>
+        </select>
+        <p></p>
+        <SPAN><h2>Para:</h2></SPAN>
+        <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="convert-to" id="para">
+            <option value="USD">Dólar</option>
+            <option value="EUR">Euro</option>
+            <option value="BRL">Real</option>
+        </select>
+        <p></p>
+        <SPAN><h2>Valor:</h2></SPAN>
+        <input type="text" name="numbers" id="numeric" ></input>
+        <p></p>
+        <div>
+        <button class="btn btn-dark" onclick="converter()">Converter</button>
+        </div>  
+    
+    <div >
+        <br><h2><span id="valorfinal"></span></h2></br>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$('#numeric').keyup(function() {
+    $(this).val(this.value.replace(/\D/g, ''));
+  });
+  </script>
+
+</body>
+</html>
+
