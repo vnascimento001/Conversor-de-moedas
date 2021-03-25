@@ -29,17 +29,17 @@ function main() {
 
   //ifs
   if (de.value == "EUR" && para.value == "BRL" && valorInput != null ){
-      valorFinal.innerHTML = "R$" + valorInput * eur;
+      valorFinal.innerHTML = "R$" + (valorInput * eur).toFixed(2);
   }else if (de.value == "USD" && para.value == "BRL" && valorInput != null){
-    valorFinal.innerHTML = "R$" + valorInput * usd;
+    valorFinal.innerHTML = "R$" + (valorInput * usd).toFixed(2);
   }else if (de.value == "BRL" && para.value == "EUR" && valorInput != null){
-    valorFinal.innerHTML = "€" + valorInput / eur;
+    valorFinal.innerHTML = "€" + (valorInput / eur).toFixed(2);
   }else if (de.value == "BRL" && para.value == "USD" && valorInput != null){
-    valorFinal.innerHTML = "US$" + valorInput / usd;
+    valorFinal.innerHTML = "US$" + (valorInput / usd).toFixed(2);
   }else if (de.value == "USD" && para.value == "EUR" && valorInput != null){
-    valorFinal.innerHTML = "€" + valorInput / eurusd;
+    valorFinal.innerHTML = "€" + (valorInput / eurusd).toFixed(2);
   }else if (de.value == "EUR" && para.value == "USD" && valorInput != null){
-    valorFinal.innerHTML = "US$" + valorInput * eurusd;
+    valorFinal.innerHTML = "US$" + (valorInput * eurusd).toFixed(2);
   }else if (de.value == "BRL" && para.value == "BRL" && valorInput != null){
     valorFinal.innerHTML = "R$" + valorInput;
   }else if (de.value == "USD" && para.value == "USD" && valorInput != null){
