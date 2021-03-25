@@ -61,6 +61,12 @@ body .container {
     font-family: inherit;
     font-weight: normal;
 }
+body .container .b{
+  color: #ffffff;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: normal;
+}
   body .container input {
     background-color: rgba(255, 255, 255, 0.5);
     border-style: none;

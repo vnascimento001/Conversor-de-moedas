@@ -27,7 +27,7 @@ function main() {
   let usd = parseFloat(moeda.USD.ask);
   let eurusd = parseFloat(moeda1.EUR.ask);
 
-  //ifs
+  //condicionais
   if (de.value == "EUR" && para.value == "BRL" && valorInput != null ){
       valorFinal.innerHTML = "R$" + (valorInput * eur).toFixed(2);
   }else if (de.value == "USD" && para.value == "BRL" && valorInput != null){
