@@ -40,23 +40,23 @@ function main() {
 
  
   //condicionais
-  if (de.value == "EUR" && para.value == "BRL"  && valorInput != null){
+  if (de.value == "EUR" && para.value == "BRL"){
     valorFinal.innerHTML = "R$" + multiplica(valorInput,eur).toFixed(2);
-  }else if (de.value == "USD" && para.value == "BRL" && valorInput != null){
+  }else if (de.value == "USD" && para.value == "BRL"){
     valorFinal.innerHTML = "R$" + multiplica(valorInput, usd).toFixed(2);
-  }else if (de.value == "BRL" && para.value == "EUR" && valorInput != null){
+  }else if (de.value == "BRL" && para.value == "EUR"){
     valorFinal.innerHTML = "€" + divide(valorInput, eur).toFixed(2);
-  }else if (de.value == "BRL" && para.value == "USD" && valorInput != null){
+  }else if (de.value == "BRL" && para.value == "USD"){
     valorFinal.innerHTML = "US$" + divide(valorInput, usd).toFixed(2);
-  }else if (de.value == "USD" && para.value == "EUR" && valorInput != null){
+  }else if (de.value == "USD" && para.value == "EUR"){
     valorFinal.innerHTML = "€" + divide(valorInput, eurusd).toFixed(2);
-  }else if (de.value == "EUR" && para.value == "USD" && valorInput != null){
+  }else if (de.value == "EUR" && para.value == "USD"){
     valorFinal.innerHTML = "US$" + multiplica(valorInput, eurusd).toFixed(2);
-  }else if (de.value == "BRL" && para.value == "BRL" && valorInput != null){
+  }else if (de.value == "BRL" && para.value == "BRL"){
     valorFinal.innerHTML = "R$" + valorInput;
-  }else if (de.value == "USD" && para.value == "USD" && valorInput != null){
+  }else if (de.value == "USD" && para.value == "USD"){
     valorFinal.innerHTML = "US$" + valorInput;
-  }else if (de.value == "EUR" && para.value == "EUR" && valorInput != null){
+  }else if (de.value == "EUR" && para.value == "EUR"){
     valorFinal.innerHTML = "€" + valorInput;
   }else{
     valorFinal.innerHTML = "Insira um número válido"
