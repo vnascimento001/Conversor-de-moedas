@@ -29,15 +29,19 @@ function main() {
   let valorInput = parseInt(document.getElementById("numeric").value);
   let de = document.getElementById("de");
   let para = document.getElementById("para");
-
+  
+  if (Number.isNaN(valorInput)){
+    valorInput = 0;
+  } 
   // valor moeda em relação ao real
   let eur = parseFloat(moeda.EUR.ask);
   let usd = parseFloat(moeda.USD.ask);
   let eurusd = parseFloat(moeda1.EUR.ask);
 
+ 
   //condicionais
-  if (de.value == "EUR" && para.value == "BRL" && valorInput != null ){
-      valorFinal.innerHTML = "R$" + multiplica(valorInput,eur).toFixed(2);
+  if (de.value == "EUR" && para.value == "BRL"  && valorInput != null){
+    valorFinal.innerHTML = "R$" + multiplica(valorInput,eur).toFixed(2);
   }else if (de.value == "USD" && para.value == "BRL" && valorInput != null){
     valorFinal.innerHTML = "R$" + multiplica(valorInput, usd).toFixed(2);
   }else if (de.value == "BRL" && para.value == "EUR" && valorInput != null){
